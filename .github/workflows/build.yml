@@ -35,7 +35,7 @@ jobs:
 
       - name: Extract Project
         run: |
-          unzip -q Cihuyy-GoPay-Speaker-Android-Project-2.zip -d project
+          unzip -q Cihuyy-GoPay-Speaker-Android-Project-3.zip -d project
 
       - name: Build Debug APK
         working-directory: project
