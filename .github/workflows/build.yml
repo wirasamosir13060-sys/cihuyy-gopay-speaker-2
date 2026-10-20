@@ -1,4 +1,4 @@
-name: Build Cihuyy GoPay Speaker
+name: Cihuyy GoPay Speaker
 
 on:
   workflow_dispatch:
@@ -19,8 +19,6 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-        with:
-          packages: 'platforms;android-35 build-tools;35.0.0'
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -29,7 +27,6 @@ jobs:
 
       - name: Extract project
         run: |
-          mkdir project
           unzip -q Cihuyy-GoPay-Speaker-Android-Project.zip -d project
 
       - name: Build APK
